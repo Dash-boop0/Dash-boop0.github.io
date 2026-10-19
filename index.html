@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Marketing Ops & AEO/GEO Tools · Dash-boop0</title>
+<meta name="description" content="Five working, open-source tools for AEO/GEO research, B2B outreach analytics, SEO content planning, marketing automation and partnership intelligence.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232F5BEA'/%3E%3Cpath d='M9 22V10h5.5a4 4 0 0 1 0 8H9' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#F7F7F5;--surface:#FFF;--border:#E3E2DE;--text:#1C1C1A;--muted:#5F5E5A;--accent:#2F5BEA;--accent-weak:#E8EEFD;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#141413;--surface:#1E1E1C;--border:#33332F;--text:#EDEDEA;--muted:#A3A29C;--accent:#7C9CFF;--accent-weak:#1F2A4D}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+header{padding:72px 0 40px}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(32px,5vw,48px);line-height:1.1;margin:10px 0 16px;letter-spacing:-.02em}
+.lede{font-size:18px;color:var(--muted);max-width:680px;margin:0}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;padding:0;list-style:none}
+.facts li{font-size:13px;padding:6px 12px;border:1px solid var(--border);border-radius:999px;background:var(--surface);color:var(--muted)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));padding-bottom:48px}
+.card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--border);border-radius:14px;overflow:hidden}
+.card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top left;border-bottom:1px solid var(--border);background:var(--accent-weak)}
+.card .body{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1}
+.num{font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.06em}
+.card h2{font-size:20px;margin:4px 0 8px;line-height:1.25}
+.card p{margin:0 0 14px;color:var(--muted);font-size:15px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 16px;padding:0;list-style:none}
+.tags li{font-size:12px;padding:3px 9px;border-radius:999px;background:var(--accent-weak);color:var(--text)}
+.links{margin-top:auto;display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;min-height:40px;padding:0 16px;border-radius:999px;font-weight:600;font-size:14px;text-decoration:none;border:1px solid var(--accent)}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.ghost{color:var(--accent)}
+.btn:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+section.how{border-top:1px solid var(--border);padding:40px 0}
+section.how h2{font-size:22px;margin:0 0 12px}
+section.how ul{margin:0;padding-left:20px;color:var(--muted)}
+footer{border-top:1px solid var(--border);padding:24px 0 40px;color:var(--muted);font-size:14px}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="eyebrow">Portfolio · Marketing operations &amp; AEO/GEO</div>
+  <h1>Working tools for modern B2B marketing.</h1>
+  <p class="lede">Five open-source projects covering AI-answer visibility research, outreach analytics, SEO content planning, workflow automation and partnership intelligence. Each one is a working app you can try in your browser, not a mockup.</p>
+  <ul class="facts">
+    <li>Runs in your browser, nothing to install</li>
+    <li>Your data stays on your device</li>
+    <li>Sample data is synthetic</li>
+    <li>Open source (MIT)</li>
+  </ul>
+</header>
+<main class="wrap">
+  <div class="grid">
+    <article class="card">
+      <img src="/aeo-geo-visibility-lab/docs/screenshot.png" alt="Screenshot of the AEO/GEO Visibility Research Lab dashboard" loading="lazy">
+      <div class="body"><div class="num">01</div><h2>AEO/GEO Visibility Research Lab</h2>
+      <p>Log AI-generated answers to a fixed set of buyer questions, then measure brand mention rate, domain citation rate and competitor share across platforms and dates.</p>
+      <ul class="tags"><li>AEO</li><li>GEO</li><li>AI search</li><li>Research method</li></ul>
+      <div class="links"><a class="btn primary" href="/aeo-geo-visibility-lab/">Open the tool</a><a class="btn ghost" href="https://github.com/Dash-boop0/aeo-geo-visibility-lab">Source</a></div></div>
+    </article>
+    <article class="card">
+      <img src="/b2b-outreach-analytics/docs/screenshot.png" alt="Screenshot of the B2B Outreach Analytics dashboard" loading="lazy">
+      <div class="body"><div class="num">02</div><h2>B2B Outreach Analytics System</h2>
+      <p>A lightweight CRM for institutional outreach: follow-ups, duplicate detection, data-quality checks and a funnel with clearly defined denominators.</p>
+      <ul class="tags"><li>CRM</li><li>Outreach</li><li>Pipeline</li><li>Data quality</li></ul>
+      <div class="links"><a class="btn primary" href="/b2b-outreach-analytics/">Open the tool</a><a class="btn ghost" href="https://github.com/Dash-boop0/b2b-outreach-analytics">Source</a></div></div>
+    </article>
+    <article class="card">
+      <img src="/seo-content-intelligence/docs/screenshot.png" alt="Screenshot of the SEO Content Intelligence Toolkit" loading="lazy">
+      <div class="body"><div class="num">03</div><h2>SEO Content Intelligence Toolkit</h2>
+      <p>Turn keyword research into intent-classified clusters, content gaps, editable briefs and explainable priorities, without inventing missing metrics.</p>
+      <ul class="tags"><li>SEO</li><li>Content strategy</li><li>Search intent</li><li>Briefs</li></ul>
+      <div class="links"><a class="btn primary" href="/seo-content-intelligence/">Open the tool</a><a class="btn ghost" href="https://github.com/Dash-boop0/seo-content-intelligence">Source</a></div></div>
+    </article>
+    <article class="card">
+      <img src="/marketing-workflow-automation/docs/screenshot.png" alt="Screenshot of the Marketing Workflow Automation app" loading="lazy">
+      <div class="body"><div class="num">04</div><h2>Marketing Workflow Automation</h2>
+      <p>A reproducible lead pipeline: validation, normalisation, deduplication, rule-based categories and follow-up tasks, in the browser, on the command line or in n8n.</p>
+      <ul class="tags"><li>Automation</li><li>Marketing ops</li><li>n8n</li><li>CLI</li></ul>
+      <div class="links"><a class="btn primary" href="/marketing-workflow-automation/">Open the tool</a><a class="btn ghost" href="https://github.com/Dash-boop0/marketing-workflow-automation">Source</a></div></div>
+    </article>
+    <article class="card">
+      <img src="/b2b-partnership-intelligence/docs/screenshot.png" alt="Screenshot of the B2B Partnership Intelligence dashboard" loading="lazy">
+      <div class="body"><div class="num">05</div><h2>B2B Market &amp; Partnership Intelligence</h2>
+      <p>Segment potential partners and prioritise outreach with configurable weighted scoring, per-factor explanations and evidence tracking.</p>
+      <ul class="tags"><li>Partnerships</li><li>Market research</li><li>Scoring</li><li>Strategy</li></ul>
+      <div class="links"><a class="btn primary" href="/b2b-partnership-intelligence/">Open the tool</a><a class="btn ghost" href="https://github.com/Dash-boop0/b2b-partnership-intelligence">Source</a></div></div>
+    </article>
+  </div>
+  <section class="how">
+    <h2>How these are built</h2>
+    <ul>
+      <li>Plain HTML, CSS and JavaScript: no frameworks, no paid APIs, no tracking.</li>
+      <li>Every metric and score has a written definition and is covered by automated tests with hand-checked examples.</li>
+      <li>Sample datasets are synthetic and labelled as such; no real clients, results or contacts are shown.</li>
+      <li>Data is saved in your browser. Use each tool's backup button to export it.</li>
+    </ul>
+  </section>
+</main>
+<footer class="wrap">© 2026 Dash-boop0 · <a href="https://github.com/Dash-boop0">GitHub</a> · All tools are open source under the MIT licence.</footer>
+</body>
+</html>
