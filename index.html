@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Marketing Ops & AEO/GEO Tools · Dash-boop0</title>
-<meta name="description" content="Five working, open-source tools for AEO/GEO research, B2B outreach analytics, SEO content planning, marketing automation and partnership intelligence.">
+<meta name="description" content="Seven working, open-source tools for AEO/GEO research, B2B outreach analytics, SEO content planning, marketing automation and partnership intelligence.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232F5BEA'/%3E%3Cpath d='M9 22V10h5.5a4 4 0 0 1 0 8H9' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <style>
 :root{--bg:#F7F7F5;--surface:#FFF;--border:#E3E2DE;--text:#1C1C1A;--muted:#5F5E5A;--accent:#2F5BEA;--accent-weak:#E8EEFD;color-scheme:light dark}
@@ -25,6 +25,7 @@ h1{font-size:clamp(32px,5vw,48px);line-height:1.1;margin:10px 0 16px;letter-spac
 .num{font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.06em}
 .card h2{font-size:20px;margin:4px 0 8px;line-height:1.25}
 .card p{margin:0 0 14px;color:var(--muted);font-size:15px}
+.card p.note{margin:12px 0 0;font-size:13px}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 16px;padding:0;list-style:none}
 .tags li{font-size:12px;padding:3px 9px;border-radius:999px;background:var(--accent-weak);color:var(--text)}
 .links{margin-top:auto;display:flex;gap:10px;flex-wrap:wrap}
@@ -43,9 +44,9 @@ footer a{color:var(--accent)}
 <header class="wrap">
   <div class="eyebrow">Portfolio · Marketing operations &amp; AEO/GEO</div>
   <h1>Working tools for modern B2B marketing.</h1>
-  <p class="lede">Five open-source projects covering AI-answer visibility research, outreach analytics, SEO content planning, workflow automation and partnership intelligence. Each one is a working app you can try in your browser, not a mockup.</p>
+  <p class="lede">Seven open-source projects: five browser tools for AI-answer visibility research, outreach analytics, SEO content planning, workflow automation and partnership intelligence, plus two full-stack multi-agent systems for lead generation and revenue operations. Each one is a working app you can try in your browser, not a mockup.</p>
   <ul class="facts">
-    <li>Runs in your browser, nothing to install</li>
+    <li>Live demos, nothing to install</li>
     <li>Your data stays on your device</li>
     <li>Sample data is synthetic</li>
     <li>Open source (MIT)</li>
@@ -88,14 +89,30 @@ footer a{color:var(--accent)}
       <ul class="tags"><li>Partnerships</li><li>Market research</li><li>Scoring</li><li>Strategy</li></ul>
       <div class="links"><a class="btn primary" href="/b2b-partnership-intelligence/">Open the tool</a><a class="btn ghost" href="https://github.com/Dash-boop0/b2b-partnership-intelligence">Source</a></div></div>
     </article>
+    <article class="card">
+      <img src="/img/leadgen.jpg" alt="Screenshot of the Autonomous B2B Lead-gen Engine overview" loading="lazy">
+      <div class="body"><div class="num">06 · Full-stack</div><h2>Autonomous B2B Lead-gen Engine</h2>
+      <p>20 specialised agents on a durable workflow engine: ICP research, account and contact discovery, honest verification levels, explainable scoring, approved dry-run campaigns and reply triage.</p>
+      <ul class="tags"><li>Multi-agent</li><li>FastAPI</li><li>Next.js</li><li>Human-in-the-loop</li></ul>
+      <div class="links"><a class="btn primary" href="https://leadgen-web-zeta.vercel.app">Open live demo</a><a class="btn ghost" href="https://github.com/Dash-boop0/autonomous-b2b-leadgen-engine">Source</a></div>
+      <p class="note">Demo login: operator / demo. First load may take a few seconds.</p></div>
+    </article>
+    <article class="card">
+      <img src="/img/revops.jpg" alt="Screenshot of the Autonomous B2B Revenue Ops overview" loading="lazy">
+      <div class="body"><div class="num">07 · Full-stack</div><h2>Autonomous B2B Revenue Ops</h2>
+      <p>23 agents covering research to proposal, deal-desk approval, mock e-signature and customer handoff, with approval gates that no agent can bypass or self-approve.</p>
+      <ul class="tags"><li>Revenue operations</li><li>Approval engine</li><li>Knowledge base</li><li>Audit trail</li></ul>
+      <div class="links"><a class="btn primary" href="https://revops-web.vercel.app">Open live demo</a><a class="btn ghost" href="https://github.com/Dash-boop0/autonomous-b2b-revenue-ops">Source</a></div>
+      <p class="note">Signed in as a demo operator automatically. First load may take a few seconds.</p></div>
+    </article>
   </div>
   <section class="how">
     <h2>How these are built</h2>
     <ul>
-      <li>Plain HTML, CSS and JavaScript: no frameworks, no paid APIs, no tracking.</li>
+      <li>Browser tools: plain HTML, CSS and JavaScript, with no frameworks, paid APIs or tracking. Agent systems: FastAPI, PostgreSQL and Next.js, with mock providers and dry-run sending by default.</li>
       <li>Every metric and score has a written definition and is covered by automated tests with hand-checked examples.</li>
       <li>Sample datasets are synthetic and labelled as such; no real clients, results or contacts are shown.</li>
-      <li>Data is saved in your browser. Use each tool's backup button to export it.</li>
+      <li>Browser tools save data in your browser; the agent-system demos use a shared demo database that an admin can reset.</li>
     </ul>
   </section>
 </main>
